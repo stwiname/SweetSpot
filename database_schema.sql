@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `event` (
   `rowid` INT NOT NULL AUTO_INCREMENT,
   `name` TEXT NOT NULL,
   `image` TEXT NOT NULL COMMENT 'is a path_name',
-  `date` datetime NOT NULL,
+  `event_time` datetime NOT NULL,
   `description` TEXT NOT NULL,
   `region` TEXT NOT NULL,
   `address` TEXT NOT NULL,
