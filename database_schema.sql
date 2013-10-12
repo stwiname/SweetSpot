@@ -9,10 +9,13 @@ CREATE TABLE  `sweet_spot_test`.`client` (
 
 CREATE TABLE  `sweet_spot_test`.`tier` (
 `rowid` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`tier_number` INT NOT NULL,
 `name` TEXT NOT NULL ,
 `price` DECIMAL NOT NULL ,
-`weekday` ENUM(  'Mon',  'Tues',  'Wed',  'Thurs',  'Sat',  'Sun' ) NOT NULL ,
-`in_use` BOOL NOT NULL
+`tier_date` DATE NOT NULL ,
+`in_use` BOOL NOT NULL,
+`spaces_used` INT NOT NULL DAFAULT '0',
+UNIQUE (`tier_number`, `tier_date`)
 ) ENGINE = INNODB;
 
 CREATE TABLE IF NOT EXISTS `event` (
