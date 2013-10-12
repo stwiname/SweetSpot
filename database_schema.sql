@@ -24,6 +24,7 @@ CREATE TABLE IF NOT EXISTS `event` (
   `image` TEXT NOT NULL COMMENT 'is a path_name',
   `date` datetime NOT NULL,
   `description` TEXT NOT NULL,
+  `region` TEXT NOT NULL,
   `address` TEXT NOT NULL,
   `attendees` INT NOT NULL DEFAULT '0',
   `client` INT NOT NULL,
