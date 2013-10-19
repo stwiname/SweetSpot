@@ -15,6 +15,7 @@ CREATE TABLE  `sweet_spot_test`.`tier` (
 `tier_date` DATE NOT NULL ,
 `in_use` BOOL NOT NULL,
 `spaces_used` INT NOT NULL DAFAULT '0',
+`city` TEXT NOT NULL,
 UNIQUE (`tier_number`, `tier_date`)
 ) ENGINE = INNODB;
 
