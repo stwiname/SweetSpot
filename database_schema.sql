@@ -30,6 +30,7 @@ CREATE TABLE IF NOT EXISTS `event` (
   `attendees` INT NOT NULL DEFAULT '0',
   `client` INT NOT NULL,
   `tier` INT NOT NULL,
+  `price` DECIMAL NOT NULL,
   PRIMARY KEY (`rowid`),
   CONSTRAINT event_client FOREIGN KEY (`client`) REFERENCES `client` (`rowid`),
   CONSTRAINT event_tier FOREIGN KEY (`tier`) REFERENCES `tier` (`rowid`)
