@@ -1,4 +1,4 @@
-CREATE TABLE  `sweet_spot_test`.`client` (
+CREATE TABLE  `client` (
 `rowid` INT NOT NULL DEFAULT NULL AUTO_INCREMENT PRIMARY KEY ,
 `name` VARCHAR(255) NOT NULL ,
 `email` VARCHAR(255) NOT NULL ,
@@ -10,7 +10,7 @@ UNIQUE (`name`),
 UNIQUE (`email`)
 ) ENGINE = INNODB;
 
-CREATE TABLE  `sweet_spot_test`.`tier` (
+CREATE TABLE  `tier` (
 `rowid` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
 `tier_number` INT NOT NULL,
 `name` TEXT NOT NULL ,
