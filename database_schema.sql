@@ -17,7 +17,7 @@ CREATE TABLE  `tier` (
 `price` DECIMAL NOT NULL ,
 `tier_date` DATE NOT NULL ,
 `in_use` BOOL NOT NULL,
-`tier_limit` INT NOT NULL DAFAULT '0',
+`tier_limit` INT NOT NULL,
 `city` TEXT NOT NULL,
 UNIQUE (`tier_number`, `tier_date`)
 ) ENGINE = INNODB;
